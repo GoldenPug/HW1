@@ -46,3 +46,12 @@ Box::Box() {
 
 	_filled = true;
 }
+
+//parameterized constructor: filled
+Box::Box(int width, int height) {
+	_width = width;
+
+	_height = height;
+
+	_filled = true;
+}
