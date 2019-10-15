@@ -19,3 +19,38 @@ using std::ostream;
 
 
 //class box
+class Box {
+
+public:
+	int getWidth() const; //accessor fucntion width
+
+	int getHeight() const; //accessor function height
+
+	void setWidth(int width); //mutator function width
+
+	void setHeight(int height); //mutator function height 
+
+	string type() const; //returns filled or hollow box
+
+	void print(ostream & obj) const; //member function returns either the string "Filled" or "Hollow"
+
+	Box(); //default constructor: 1 x 1 box
+
+	Box(int width, int height); //parameterized constuctor: filled
+
+	Box(int width, int height, bool filled); //parameterized constuctor: hollow
+
+	~Box(); //destructor
+
+private:
+	int _width;
+
+	int _height;
+
+	bool _filled;
+
+};
+
+#endif
+
+//end of file
