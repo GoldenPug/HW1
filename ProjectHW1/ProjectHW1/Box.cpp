@@ -22,3 +22,8 @@ using std::ostream;
 int Box::getWidth() const {
 	return _width;
 }
+
+//sets width
+void Box::setWidth(int width) {
+	_width = width;
+}
