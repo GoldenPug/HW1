@@ -74,3 +74,36 @@ string Box::type() const {
 	else
 		return "Hollow";
 }
+
+//print function for print filled or hollow box
+void Box::print(ostream & out) const {
+
+	//prints hollow box
+	if (!_filled) {
+		for (int ii = 1; ii <= _height; ii++) {
+
+			for (int jj = 1; jj <= _width; jj++) {
+
+				if ((ii == 1 || ii == _height) || (jj == 1 || jj == _width))
+					out << "x";
+
+				else
+					out << " ";
+			}
+
+			out << endl;
+		}
+	}
+
+	//prints filled box
+	else {
+		for (int ii = 1; ii <= _height; ii++) {
+
+			for (int jj = 1; jj <= _width; jj++) {
+				out << "x";
+			}
+
+			out << endl;
+		}
+	}
+}
