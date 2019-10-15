@@ -65,3 +65,12 @@ Box::Box(int width, int height, bool filled) {
 	_filled = filled;
 }
 
+//member function returns either the string Filled or Hollow
+string Box::type() const {
+	if (_filled) {
+		return "Filled";
+	}
+
+	else
+		return "Hollow";
+}
