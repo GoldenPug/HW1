@@ -33,3 +33,7 @@ int Box::getHeight() const {
 	return _height;
 }
 
+//sets height
+void Box::setHeight(int height) {
+	_height = height;
+}
