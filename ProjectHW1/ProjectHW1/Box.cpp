@@ -107,3 +107,10 @@ void Box::print(ostream & out) const {
 		}
 	}
 }
+
+//deconstructor
+Box::~Box() {
+	cout << "Class Box Deconstructed" << endl;
+}
+
+//end of file
