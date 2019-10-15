@@ -55,3 +55,13 @@ Box::Box(int width, int height) {
 
 	_filled = true;
 }
+
+//parameterized constructor: hollow
+Box::Box(int width, int height, bool filled) {
+	_width = width;
+
+	_height = height;
+
+	_filled = filled;
+}
+
