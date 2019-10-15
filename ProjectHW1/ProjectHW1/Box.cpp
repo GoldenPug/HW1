@@ -27,3 +27,9 @@ int Box::getWidth() const {
 void Box::setWidth(int width) {
 	_width = width;
 }
+
+//gets height
+int Box::getHeight() const {
+	return _height;
+}
+
